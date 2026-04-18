@@ -89,7 +89,7 @@ const Demo = () => {
             <p className="text-sm text-secondary mt-1">Disponible para Android</p>
           </div>
           <motion.a
-            href="/COMPAS.apk" download
+            href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-" download
             whileHover={{ scale: 1.05, boxShadow: '0 8px 32px rgba(255,107,0,.3)' }}
             whileTap={{ scale: 0.97 }}
             className="flex items-center gap-2.5 px-7 py-3.5 rounded-full text-white font-semibold shadow-lg whitespace-nowrap"

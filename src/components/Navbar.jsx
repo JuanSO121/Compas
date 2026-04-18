@@ -93,7 +93,7 @@ const Navbar = () => {
         {/* Actions */}
         <div className="flex items-center gap-3">
           <motion.a
-            href="/COMPAS.apk" download
+            href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-" download
             whileHover={{ scale: 1.04, boxShadow: '0 6px 24px rgba(255,107,0,.35)' }}
             whileTap={{ scale: 0.96 }}
             className="hidden md:inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-semibold text-white"
@@ -138,7 +138,7 @@ const Navbar = () => {
               </a>
             ))}
             <a
-              href="/COMPAS.apk" download
+              href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-" download
               className="mt-3 text-center py-3 rounded-full text-sm font-semibold text-white"
               style={{ background: 'linear-gradient(135deg,#FF6B00,#cc5500)' }}
             >
