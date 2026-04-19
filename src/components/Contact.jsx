@@ -28,7 +28,7 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="contact" className="py-7 px-6">
+    <section id="contact" className="py-25 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
 
 

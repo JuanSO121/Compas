@@ -30,7 +30,7 @@ const Value = () => {
   const isInView = useInView(ref, { once: true, margin: '-60px' });
 
   return (
-    <section id="value" className="py-16 px-6">
+    <section id="value" className="py-16 px-6 md:py-20">
       <div className="max-w-6xl mx-auto" ref={ref}>
 
         {/* Header */}

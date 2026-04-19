@@ -6,7 +6,7 @@ const links = [
   { name: 'Cómo funciona', href: '#how'     },
   { name: 'Por qué',       href: '#why'     },
   { name: 'Demo',          href: '#demo'    },
-  { name: 'Contacto',      href: '#contact' },
+  { name: 'FeedBack',      href: '#feedback' },
 ];
 
 const Navbar = () => {
@@ -63,11 +63,20 @@ const Navbar = () => {
               boxShadow: '0 4px 14px rgba(0,0,0,0.1)',
             }}
           >
+          <div
+            className="w-10 h-10 rounded-md overflow-hidden flex items-center justify-center"
+            style={{
+              background: 'rgba(255,255,255,0.04)',
+              border: '1px solid rgba(255,255,255,0.08)',
+              boxShadow: '0 4px 14px rgba(0,0,0,0.1)',
+            }}
+          >
             <img
               src="/logo.png"
               alt="COMPAS"
-              className="h-10 w-10 object-cover scale-80 rounded-md"
+              className="w-full h-full object-contain"
             />
+          </div>
           </div>
 
           <span className="font-display text-xl font-bold gradient-text tracking-tight">

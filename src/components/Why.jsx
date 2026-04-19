@@ -26,7 +26,7 @@ const Why = () => {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="why" className="py-24 px-6">
+    <section id="why" className="py-20 px-6 md:py-24">
       <div className="max-w-6xl mx-auto" ref={ref}>
 
         {/* Header */}

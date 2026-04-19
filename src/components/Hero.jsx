@@ -4,7 +4,7 @@ import { FaAndroid, FaGithub } from 'react-icons/fa';
 const Hero = () => (
   <section
     id="home"
-    className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-20 pb-16 overflow-hidden"
+    className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 pt-24 pb-20 md:pt-28 md:pb-24 overflow-hidden"
   >
     {/* Glow ambiental */}
     <div
@@ -12,7 +12,7 @@ const Hero = () => (
       style={{ background: 'radial-gradient(ellipse, #FF6B00 0%, transparent 70%)' }}
     />
 
-    <div className="relative z-10 max-w-2xl">
+    <div className="relative z-10 max-w-3xl">
 
       {/* Badge */}
       <motion.div
@@ -31,7 +31,7 @@ const Hero = () => (
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.08 }}
-        className="font-display text-5xl md:text-7xl font-bold text-primary leading-none tracking-tight mb-5"
+        className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-primary leading-none tracking-tight mb-5"
       >
         Navega espacios interiores
         <br />

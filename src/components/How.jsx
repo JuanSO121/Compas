@@ -26,7 +26,7 @@ const How = () => {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="how" className="py-6 px-6">
+    <section id="how" className="py-24 px-6">
       <div className="max-w-6xl mx-auto" ref={ref}>
 
         {/* Header */}
@@ -34,7 +34,7 @@ const How = () => {
         initial={{ opacity: 0, y: 24 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
-        className="mb-14 text-center flex flex-col items-center"
+        className="mb-8 text-center flex flex-col items-center"
         >
 
         {/* 🔥 ISOLOGO */}
@@ -70,7 +70,7 @@ const How = () => {
         </motion.div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-5 mb-16">
+        <div className="grid md:grid-cols-3 gap-5 mb-6">
           {steps.map((s, i) => (
             <motion.div
               key={i}
