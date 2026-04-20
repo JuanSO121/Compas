@@ -3,10 +3,11 @@ import { useState, useEffect } from 'react';
 import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
 
 const links = [
-  { name: 'Cómo funciona', href: '#how'     },
-  { name: 'Por qué',       href: '#why'     },
-  { name: 'Demo',          href: '#demo'    },
-  { name: 'FeedBack',      href: '#feedback' },
+  { name: 'Inicio', href: '#home' },
+  { name: 'Cómo funciona', href: '#how' },
+  { name: 'Por qué', href: '#why' },
+  { name: 'Demo', href: '#demo' },
+  { name: 'Feedback', href: '#feedback' },
 ];
 
 const Navbar = () => {

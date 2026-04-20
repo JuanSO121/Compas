@@ -38,41 +38,15 @@ const Demo = () => {
           className="glass rounded-2xl overflow-hidden mb-8"
           style={{ border: '1px solid rgba(255,107,0,.12)' }}
         >
-          {/*
-            Para agregar video:
-
-            Opción A — archivo local (coloca demo.mp4 en /public/):
-            <video controls poster="/demo-thumb.jpg" className="w-full block">
-              <source src="/demo.mp4" type="video/mp4" />
-            </video>
-
-            Opción B — YouTube (reemplaza TU_VIDEO_ID):
-            <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
-              <iframe
-                className="absolute inset-0 w-full h-full"
-                src="https://www.youtube.com/embed/TU_VIDEO_ID"
-                frameBorder="0" allowFullScreen
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              />
-            </div>
-          */}
-
-          {/* Placeholder — reemplaza con video real */}
-          <div
-            className="w-full flex flex-col items-center justify-center gap-4"
-            style={{ aspectRatio: '16/9', background: 'rgba(255,107,0,.04)' }}
-          >
-            <motion.div
-              whileHover={{ scale: 1.06 }}
-              className="w-16 h-16 rounded-full flex items-center justify-center cursor-pointer shadow-lg"
-              style={{ background: 'linear-gradient(135deg,#FF6B00,#cc5500)' }}
-            >
-              <svg className="ml-1" width="22" height="22" viewBox="0 0 24 24" fill="white">
-                <polygon points="5 3 19 12 5 21 5 3" />
-              </svg>
-            </motion.div>
-            <p className="text-sm font-medium text-primary">Video de demostración</p>
-            <p className="text-xs text-secondary">Próximamente</p>
+          <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/UZZJC2NnVfI?rel=0&modestbranding=1"
+              title="Demo COMPAS"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </motion.div>
 
@@ -88,8 +62,10 @@ const Demo = () => {
             <p className="font-semibold text-primary text-lg">Pruébalo tú mismo</p>
             <p className="text-sm text-secondary mt-1">Disponible para Android</p>
           </div>
+
           <motion.a
-            href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-" download
+            href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-"
+            download
             whileHover={{ scale: 1.05, boxShadow: '0 8px 32px rgba(255,107,0,.3)' }}
             whileTap={{ scale: 0.97 }}
             className="flex items-center gap-2.5 px-7 py-3.5 rounded-full text-white font-semibold shadow-lg whitespace-nowrap"

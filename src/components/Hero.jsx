@@ -46,7 +46,8 @@ const Hero = () => (
         className="text-lg md:text-xl text-secondary leading-relaxed mb-10 max-w-lg mx-auto"
       >
         COMPAS guía a personas con discapacidad visual dentro de edificios donde el GPS no llega,
-        sin cables ni extras
+        sin instalar nada en el edificio
+        Probado en la USB Cali
       </motion.p>
 
       {/* CTAs */}
