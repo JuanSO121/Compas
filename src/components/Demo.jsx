@@ -7,26 +7,26 @@ const Demo = () => {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="demo" className="py-20 px-6 md:py-20">
-      <div className="max-w-6xl mx-auto" ref={ref}>
+    <section id="demo" className="py-16 px-6">
+      <div className="max-w-5xl mx-auto" ref={ref}>
 
         {/* Header */}
         <motion.div
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="mb-12 md:flex md:items-end md:justify-between"
+          transition={{ duration: 0.5 }}
+          className="mb-8 md:flex md:items-end md:justify-between"
         >
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: '#FF6B00' }}>
+            <p className="text-xs font-semibold uppercase tracking-widest mb-2" style={{ color: '#FF6B00' }}>
               Demo
             </p>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-primary">
               Míralo en acción.
             </h2>
           </div>
-          <p className="mt-4 md:mt-0 md:max-w-xs text-sm text-secondary leading-relaxed">
-            Demostración real en la biblioteca de la Universidad de San Buenaventura Cali.
+          <p className="mt-3 md:mt-0 md:max-w-xs text-sm text-secondary leading-relaxed">
+            Probado en la biblioteca de la USB Cali.
           </p>
         </motion.div>
 
@@ -34,8 +34,8 @@ const Demo = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={isInView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.7, delay: 0.12 }}
-          className="glass rounded-2xl overflow-hidden mb-8"
+          transition={{ duration: 0.6 }}
+          className="glass rounded-xl overflow-hidden mb-6"
           style={{ border: '1px solid rgba(255,107,0,.12)' }}
         >
           <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
@@ -50,29 +50,38 @@ const Demo = () => {
           </div>
         </motion.div>
 
-        {/* Download CTA */}
+        {/* CTA + requisitos */}
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.28 }}
-          className="glass rounded-2xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5"
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="glass rounded-xl p-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-5"
           style={{ border: '1px solid rgba(255,107,0,.12)' }}
         >
-          <div>
-            <p className="font-semibold text-primary text-lg">Pruébalo tú mismo</p>
-            <p className="text-sm text-secondary mt-1">Disponible para Android</p>
+          {/* Texto */}
+          <div className="text-sm text-secondary leading-relaxed max-w-md">
+            <p className="font-semibold text-primary mb-1">
+              Pruébalo en tu dispositivo
+            </p>
+
+            <p className="text-xs opacity-80">
+              Requiere Android 8.0+ (recomendado 10+), soporte ARCore y sensores de movimiento.
+              No todos los dispositivos son compatibles.
+            </p>
           </div>
 
+          {/* Botón */}
           <motion.a
             href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-"
-            download
-            whileHover={{ scale: 1.05, boxShadow: '0 8px 32px rgba(255,107,0,.3)' }}
+            target="_blank"
+            rel="noopener noreferrer"
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
-            className="flex items-center gap-2.5 px-7 py-3.5 rounded-full text-white font-semibold shadow-lg whitespace-nowrap"
+            className="flex items-center gap-2 px-6 py-3 rounded-full text-white font-semibold text-sm shadow-lg whitespace-nowrap"
             style={{ background: 'linear-gradient(135deg,#FF6B00,#cc5500)' }}
           >
-            <FaAndroid size={18} />
-            Descargar COMPAS.apk
+            <FaAndroid size={16} />
+            Descargar APK
           </motion.a>
         </motion.div>
 

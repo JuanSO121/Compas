@@ -6,30 +6,33 @@ const tabs = [
     id:    'welcome',
     label: 'Bienvenida',
     desc:  'El punto de entrada. Dos opciones, nada más. Diseñado para que cualquier persona pueda empezar sin leer nada.',
-    screens: [{ src: '/screens/welcome.png', caption: null }],
+    screens: [{ src: '/screens/welcome.jpg', caption: null }],
   },
   {
     id:    'login',
     label: 'Acceso',
     desc:  'Inicio de sesión con código de 6 dígitos que llega al correo. Sin contraseñas que olvidar.',
-    screens: [{ src: '/screens/login.png', caption: null }],
+    screens: [{ src: '/screens/login.jpg', caption: null }],
   },
   {
     id:    'registro',
     label: 'Registro',
     desc:  'Tres pasos simples: correo, contraseña y nombre. Cada campo ocupa toda la pantalla para no abrumar.',
     screens: [
-      { src: '/screens/registro-1.png', caption: 'Paso 1 — Correo' },
-      { src: '/screens/registro-2.png', caption: 'Paso 2 — Contraseña' },
-      { src: '/screens/registro-3.png', caption: 'Paso 3 — Nombre' },
+      { src: '/screens/registro-1.jpg', caption: 'Paso 1 — Correo' },
+      { src: '/screens/registro-2.jpg', caption: 'Paso 2 — Contraseña' },
+      { src: '/screens/registro-3.jpg', caption: 'Paso 3 — Nombre' },
     ],
   },
-  {
+    {
     id:    'nav',
     label: 'Navegación',
-    desc:  'La pantalla principal. El micrófono en el centro, la cámara AR de fondo y la ruta superpuesta en tiempo real.',
-    screens: [{ src: '/screens/nav.png', caption: null }],
-  },
+    desc:  'Vista normal y con detección de obstáculos usando segmentación semántica en tiempo real.',
+    screens: [
+        { src: '/screens/nav.jpeg', caption: 'Vista normal' },
+        { src: '/screens/nav-mask.jpg', caption: 'Detección de obstáculos' },
+    ],
+    },
 ];
 
 const PhoneMockup = ({ src, caption }) => (
@@ -194,7 +197,7 @@ const Screens = () => {
                           className="text-xs font-medium"
                           style={{ color: step === i ? '#FF9A50' : 'rgba(255,255,255,.3)' }}
                         >
-                          {s.caption?.split(' — ')[1] ?? `Paso ${i + 1}`}
+                          {s.caption ?? `Vista ${i + 1}`}
                         </span>
                       </button>
                     ))}

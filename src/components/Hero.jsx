@@ -57,16 +57,18 @@ const Hero = () => (
         transition={{ duration: 0.5, delay: 0.28 }}
         className="flex flex-wrap items-center justify-center gap-4"
       >
-        <motion.a
-          href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-" download
-          whileHover={{ scale: 1.05, boxShadow: '0 10px 36px rgba(255,107,0,.35)' }}
-          whileTap={{ scale: 0.97 }}
-          className="flex items-center gap-2.5 px-8 py-3.5 rounded-full text-white font-semibold text-base shadow-lg"
-          style={{ background: 'linear-gradient(135deg,#FF6B00,#cc5500)' }}
-        >
-          <FaAndroid size={18} />
-          Descargar APK
-        </motion.a>
+      <motion.a
+        href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-"
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05, boxShadow: '0 10px 36px rgba(255,107,0,.35)' }}
+        whileTap={{ scale: 0.97 }}
+        className="flex items-center gap-2.5 px-8 py-3.5 rounded-full text-white font-semibold text-base shadow-lg"
+        style={{ background: 'linear-gradient(135deg,#FF6B00,#cc5500)' }}
+      >
+        <FaAndroid size={18} />
+        Descargar APK
+      </motion.a>
 
         <motion.a
           href="#demo"
