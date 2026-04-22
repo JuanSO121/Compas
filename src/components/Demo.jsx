@@ -39,14 +39,14 @@ const Demo = () => {
           style={{ border: '1px solid rgba(255,107,0,.12)' }}
         >
           <div className="relative w-full" style={{ aspectRatio: '16/9' }}>
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/UZZJC2NnVfI?rel=0&modestbranding=1"
-              title="Demo COMPAS"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+          <iframe
+            className="absolute inset-0 w-full h-full"
+            src="https://www.youtube.com/embed/GqiV4A_-v-s?rel=0&modestbranding=1"
+            title="Demo COMPAS"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
           </div>
         </motion.div>
 
@@ -72,7 +72,7 @@ const Demo = () => {
 
           {/* Botón */}
           <motion.a
-            href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-"
+            href="https://drive.google.com/uc?export=download&id=1hGRCgPoZN9tXZPbZirlUCJn_nZC5WRPO"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}

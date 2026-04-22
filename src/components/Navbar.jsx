@@ -103,7 +103,7 @@ const Navbar = () => {
         {/* Actions */}
         <div className="flex items-center gap-3">
         <motion.a
-          href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-"
+          href="https://drive.google.com/uc?export=download&id=1hGRCgPoZN9tXZPbZirlUCJn_nZC5WRPO"
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.04, boxShadow: '0 6px 24px rgba(255,107,0,.35)' }}
@@ -149,11 +149,12 @@ const Navbar = () => {
                 {l.name}
               </a>
             ))}
-            <a
-              href="https://drive.google.com/uc?export=download&id=1pTCcWDn6whvxoJ4u3CzeObdaWGm3461-" download
-              className="mt-3 text-center py-3 rounded-full text-sm font-semibold text-white"
-              style={{ background: 'linear-gradient(135deg,#FF6B00,#cc5500)' }}
-            >
+              <a
+                href="https://drive.google.com/uc?export=download&id=1hGRCgPoZN9tXZPbZirlUCJn_nZC5WRPO"
+                download
+                className="mt-3 text-center py-3 rounded-full text-sm font-semibold text-white"
+                style={{ background: 'linear-gradient(135deg,#FF6B00,#cc5500)' }}
+              >
               Descargar APK
             </a>
           </motion.div>
